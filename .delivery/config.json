@@ -1,0 +1,16 @@
+{
+  "version": "2",
+  "build_cookbook": {
+    "name": "build-cookbook",
+    "path": ".delivery/build-cookbook"
+  },
+  "delivery-truck": {
+      "publish": {
+          "chef_server": true,
+          "supermarket": "https://supermarket.myorg.chefdemo.net"
+      }
+  },
+  "skip_phases": ["quality", "security", "smoke"],
+  "build_nodes": {},
+  "dependencies": []
+}
